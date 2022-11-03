@@ -1,0 +1,56 @@
+print("Welcome to my quiz")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("okay lets play :)")
+score = 0
+
+answer = input("What is the largest desert in the world? ")
+if answer.lower() == "antarctica":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect")
+
+answer = input("What is the third largest country in the world? ")
+if answer.lower() == "china":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect")
+
+answer = input("What is the largest continent in the world? ")
+if answer.lower() == "asia":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect")
+
+answer = input("What is the capital of Pakistan? ")
+if answer.lower() == "islamabad":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect")
+
+answer = input("How many provinces dose Canada have? ")
+if answer.lower() == "10":
+    print("Correct")
+    score += 1
+else:
+    print("Incorrect")
+
+print()
+print("You got " + str(score) + "/5 Questions correct")
+print("You got " + str((score / 5) * 100) + "%")
+print()
+
+if score == 5:
+    print("Perfect score ")
+else: quit()
+
+
+
